@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url(./assets/fonts/DMSans-Regular.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Define CSS Variables */
+
+:root {
+    /* Colors */
+    --background-color: #E5E5E5;
+    --primary-color: #FCBB42;
+    --contrast-color: #54807F;
+    --text-color: #141414;
+    --secondary-text-color: #FCF2F2;
+    /* Fonts */
+    --font-primary: 'Bebas Neue', sans-serif;
+    --font-secondary: 'DM Sans', sans-serif;
+    /* Font Sizes */
+    --font-size-h1: 32px;
+    --font-size-h2: 28px;
+    --font-size-h3: 18px;
+    --font-size-paragraph: 14px;
+    --font-size-button: 14px;
+}
+
+
+/* Base Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-paragraph);
+    line-height: 1.6;
+}
+
+
+/* Explicitly applying styles to h1, p, and button */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-paragraph);
+}
+
+button {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-button);
+    background-color: var(--primary-color);
+    color: var(--font-primary);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0a82e;
+    /* Slightly darker shade of primary color */
+}
+
+
+/* Links */
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Utility Classes (Optional) */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
