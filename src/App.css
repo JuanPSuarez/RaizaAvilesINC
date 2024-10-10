@@ -32,3 +32,28 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+.container_1,
+img,
+.container_2,
+img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 10px;
+}
+
+.footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

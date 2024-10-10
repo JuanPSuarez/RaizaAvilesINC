@@ -82,6 +82,8 @@ button {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    max-width: 224px;
+    min-width: 189px;
 }
 
 button:hover {
@@ -108,4 +110,8 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
