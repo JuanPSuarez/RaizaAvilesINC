@@ -1,0 +1,16 @@
+.carrousel {
+    display: flex;
+    overflow: hidden;
+    width: 30%;
+    position: relative;
+}
+
+.carrousel .box {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrousel .box img {
+    width: 100%;
+    height: auto;
+}

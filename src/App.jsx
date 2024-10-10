@@ -1,6 +1,15 @@
 import "./App.css";
+import Carousel from "./components/Carousel";
 
 function App() {
+  const images = [
+    "/src/assets/logos/logo_1.png",
+    "/src/assets/logos/logo_2.png",
+    "/src/assets/logos/logo_3.png",
+    "/src/assets/logos/logo_4.png",
+    "/src/assets/logos/logo_5.png",
+    "/src/assets/logos/logo_6.png",
+  ];
   return (
     <div className="container">
     <div className="title">
@@ -63,28 +72,7 @@ function App() {
       <p>Si prefieres delegar la gestión de tus redes y darle vida a tu marca con contenido auténtico y bien planificado, asegurando que siempre estés presente y conectado con tu audiencia.</p>
       <img src="/src/assets/images/img_9.png" />
       <h2>CONFIAN EN NOSOTROS</h2>
-      {/* simple carrousell */}
-      <div className="carrousel">
-        <div className="box">
-          <img src="/src/assets/logos/logo_1.png" />
-        </div>
-        <div className="box">
-          <img src="/src/assets/logos/logo_2.png" />
-        </div>
-        <div className="box">
-          <img src="/src/assets/logos/logo_3.png" />
-        </div>
-        <div className="box">
-          <img src="/src/assets/logos/logo_4.png" />
-        </div>
-        <div className="box">
-          <img src="/src/assets/logos/logo_5.png" />
-        </div>
-        <div className="box">
-          <img src="/src/assets/logos/logo_6.png" />
-        </div>
-
-      </div>
+      <Carousel images={images} />
       <h2>NUESTROS CLIENTES DICEN</h2>
       {/* a card carrousel with picture, name and experience as a client */}
       <div className="carrousel">
