@@ -44,12 +44,17 @@ img {
     margin-top: 50px;
 }
 
+.container_2,
+img {
+    flex-direction: row-reverse;
+}
+
 .textContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .footericons {
