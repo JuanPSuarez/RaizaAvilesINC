@@ -2,9 +2,18 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./Carousel.css";
 
-const Carousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
 
+
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    "/assets/logos/logo_1.png",
+    "/assets/logos/logo_2.png",
+    "/assets/logos/logo_3.png",
+    "/assets/logos/logo_4.png",
+    "/assets/logos/logo_5.png",
+    "/assets/logos/logo_6.png",
+  ];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
