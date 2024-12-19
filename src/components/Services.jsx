@@ -29,14 +29,17 @@ const Services = () => {
         <h1>Focus Proyect</h1>
         <p>Para empresas que buscan consolidar su presencia en el mercado con contenido que no solo comunica, sino que también conecta. Ya tienes un gran equipo, solo necesitas mayor visibilidad y lograr el RECONOCIMIENTO DE TU MARCA.</p>
         </a>
+        <p>➖</p>
         <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
         <h1>Cobertura Eventos</h1>
         <p>Para líderes y mentores que desean capturar el impacto de sus eventos, te ofrezco una cobertura integral que documenta cada momento clave, desde charlas inspiradoras hasta dinámicas de networking. Con este contenido podrás otorgar valor a tu comunidad y promocionar tus eventos.</p>
         </a>
+        <p>➖</p>
         <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Marca+Personal">
         <h1>Marca Personal</h1>
         <p>Si estás comenzando a construir tu presencia en redes sociales y aún no estás lista para externalizar todo el proceso, mis asesorías son la solución perfecta. Tendrás un manual de marca que te servirá de guía a la hora de generar contenido y conectar con tu audiencia</p>
         </a>
+        <p>➖</p>
         {publicationsData.map((publication, index) => (
             <Publication
                 key={index}
