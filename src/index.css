@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url('/assets/fonts/BebasNeue-Regular.ttf') format('opentype');
@@ -7,13 +10,20 @@
 
 @font-face {
     font-family: 'DM Sans';
-    src: url(/assets/fonts/DMSans-Regular.ttf) format('opentype');
+    src: url('/assets/fonts/DMSans-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Belleza';
+    src: url('/assets/fonts/Belleza-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-
 /* Define CSS Variables */
+
+
 
 :root {
     /* Colors */
@@ -22,9 +32,11 @@
     --contrast-color: #54807F;
     --text-color: #141414;
     --secondary-text-color: #FCF2F2;
+    --secondary-contrast-color: #CDCDCD;
     /* Fonts */
-    --font-primary: 'Bebas Neue', sans-serif;
+    --font-primary: 'Belleza', sans-serif;
     --font-secondary: 'DM Sans', sans-serif;
+    --font-tertiary: 'Belleza', sans-serif;
     /* Font Sizes */
     --font-size-h1: 32px;
     --font-size-h2: 28px;
@@ -33,7 +45,7 @@
     --font-size-button: 14px;
 }
 
-
+;
 /* Base Styles */
 
 body {
