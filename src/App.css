@@ -8,6 +8,7 @@
     background-image: url('/assets/images/bg_1.png');
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -17,11 +18,13 @@
 }
 
 .title h1,
+.title h3, 
 .title p {
     display: flex;
     justify-content: center;
     text-align: center;
     color: var(--secondary-text-color);
+    text-shadow: 2px 2px var(--text-color);
 }
 
 h1,
