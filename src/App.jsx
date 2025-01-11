@@ -3,7 +3,7 @@ import ClientLogoGrid from "./components/ClientLogoGrid";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Title from "./components/Title";
-import Component2 from "./components/component2";
+import ServiceNeeds from "./components/ServiceNeeds";
 // import Clients from "./components/Clients";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <button>Reserva tu reunión gratis</button>
       <Services />
       <button>Agenda tu reunion</button>
-      <Component2 />
+      <ServiceNeeds />
       <h3>¿Tienes mas dudas?</h3>
       <button>Hablemos</button>
       <h2>CONFIAN EN NOSOTROS</h2>
