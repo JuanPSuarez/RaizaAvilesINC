@@ -3,7 +3,7 @@
         "h1": "Nuestra metodología",
         "h2": "Exploración Integral",
         "p": "Inicio con un análisis profundo de tu marca para entender a fondo tu negocio y objetivos.",
-        "img": "/assets/images/img_6.jpg"
+        "img": "/assets/images/img_6.png"
     },
     {
         "h2": "Desarrollo de Estrategia de Contenidos",
@@ -13,11 +13,11 @@
     {
         "h2": "Producción Audiovisual de Impacto",
         "p": "Optimizamos la Grabacion de tu contenido, en el espacio que mejor te represente y te entregamos todo el material listo para publicar.",
-        "img": "/assets/images/img_8.jpg"
+        "img": "/assets/images/img_8.png"
     },
     {
         "h2": "Gestion de Redes",
         "p": "Si quieres optimizar completamente tu tiempo nos hacemos cargo de la gestión de tus redes, asegurando que siempre estés presente y conectado con tu audiencia.",
-        "img": "/assets/images/img_9.jpg"
+        "img": "/assets/images/img_9.png"
     }
 ]
