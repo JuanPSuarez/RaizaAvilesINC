@@ -1,0 +1,34 @@
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 120%;
+    height: 887px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/bg_1.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    filter: brightness(0.5);
+}
+
+.title h1,
+.title h3,
+.title p {
+    position: relative;
+    margin: 10px 0;
+    color: var(--secondary-text-color)
+}
+
