@@ -27,7 +27,7 @@ const Services = () => {
     <div className="services">
         <div style={{backgroundColor: "var(--secondary-contrast-color)"}}>
         <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
-        <h1>FOCUS PROJECT</h1>
+        <h1>Focus Project</h1>
         <p>Aumentamos el Valor percibido de tu Marca Personal y te damos Contenido para todo el mes en tan solo 3 dias</p>
         </a>
         <p>➖</p>
@@ -40,7 +40,6 @@ const Services = () => {
         <h1>Fotografía</h1>
         <p>Producciones estratégicas para tu Marca Personal</p>
         </a>
-        <p>➖</p>
         </div>
         {publicationsData.map((publication, index) => (
             <Publication
