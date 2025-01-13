@@ -1,7 +1,7 @@
 import "./ServiceNeeds.css";
 
 const ServiceNeeds = () => (
-    <div style={{ backgroundColor: "var(--secondary-contrast-color)" }}>
+    <div className="serviceNeeds">
         <h2>PUEDES NECESITARNOS</h2>
         <div className="container_1">
             <div className="imageContainer">
