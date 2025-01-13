@@ -16,7 +16,9 @@ const ServiceNeeds = () => (
             </div>
         </div>
         <div className="container_2">
-            <img src="/assets/images/img_2.jpg" />
+            <div className="imageContainer">
+                <img src="/assets/images/img_2.jpg" />
+            </div>
             <div className="textContainer">
                 <h2>Y deseas</h2>
                 <li>Verte como un referente y/o autoridad</li>
@@ -26,6 +28,9 @@ const ServiceNeeds = () => (
             </div>
         </div>
         <h3>Conoce como puedo ayudarte</h3>
+        <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
+            <button>Contáctanos</button>
+        </a>
     </div>
 
 );
