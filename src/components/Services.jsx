@@ -25,7 +25,7 @@ Publication.propTypes = {
 const Services = () => {
     return (
     <div className="services">
-        <div style={{backgroundColor: "var(--secondary-contrast-color)"}}>
+        <div className="principal-services">
         <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
         <h1>Focus Project</h1>
         <p>Aumentamos el Valor percibido de tu Marca Personal y te damos Contenido para todo el mes en tan solo 3 dias</p>
