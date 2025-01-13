@@ -1,7 +1,15 @@
+.footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img {
-    margin: 0 auto; 
-    display: block; 
-    object-fit: contain; 
-    width: 35px;
-    height: 35px;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    
 }
