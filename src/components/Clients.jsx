@@ -1,6 +1,3 @@
-
-
-// Client component
 const Client = () => (
     <div>
 
