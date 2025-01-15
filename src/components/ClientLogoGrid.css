@@ -1,3 +1,10 @@
+.clientContianer {
+  background-color: var(--secondary-contrast-color);
+  width: 100%;
+  border-radius: 10px;
+}
+
+
 .gridContainer {
   display: grid;
   gap: 16px;
@@ -5,9 +12,7 @@
   justify-content: center;
   padding: 20px;
   grid-template-columns: repeat(1, 1fr);
-  background-color: var(--secondary-contrast-color);
-  width: 100%;
-  border-radius: 10px;
+
 }
 
 @media (min-width: 600px) {
