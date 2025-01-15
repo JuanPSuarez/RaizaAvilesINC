@@ -5,7 +5,7 @@ const ServiceNeeds = () => (
         <h2>PUEDES NECESITARNOS</h2>
         <div className="container_1">
             <div className="imageContainer">
-                <img src="/assets/images/img_1.png" />
+                <img src="/assets/images/img_1.jpg" />
             </div>
             <div className="textContainer">
                 <h2>Si...</h2>

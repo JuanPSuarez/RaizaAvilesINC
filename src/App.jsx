@@ -5,8 +5,20 @@ import Services from "./components/Services";
 import Title from "./components/Title";
 import ServiceNeeds from "./components/ServiceNeeds";
 // import Clients from "./components/Clients";
-
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
+const ga4id = import.meta.env.VITE_MEASUREMENT_ID
 function App() {
+
+  const analytics = Analytics({
+    app: 'RaizaAvilesINC',
+    plugins: [
+      googleAnalytics({
+        measurementIds: [ga4id]
+      })
+    ]
+  })
+  analytics.page()
   return (
     <div className="container">
       <Title />
@@ -16,7 +28,6 @@ function App() {
       <ServiceNeeds />
       <h3>¿Tienes mas dudas?</h3>
       <button>Hablemos</button>
-      <h2>CONFIAN EN NOSOTROS</h2>
       <ClientLogoGrid />
       {/* <Clients /> */}
       <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">

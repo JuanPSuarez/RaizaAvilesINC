@@ -34,3 +34,9 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+
+img {
+    display: flex;
+    align-self: flex-start;
+    z-index: 1;
+}

@@ -1,6 +1,7 @@
 .serviceNeeds {
     background-color: var(--secondary-contrast-color);
     border-radius: 10px;
+    width: 105%;
 }
 
 .container_1, .container_2 {

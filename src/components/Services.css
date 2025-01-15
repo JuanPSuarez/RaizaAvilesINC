@@ -1,3 +1,8 @@
+.principal-services {
+    background-color: var(--secondary-contrast-color);
+    border-radius: 10px;
+    width: 105%;
+}
 .services {
     display: flex;
     flex-direction: column;
@@ -29,10 +34,7 @@ a:hover h1, p {
     text-decoration: none;
 }
 
-.principal-services {
-    background-color: var(--secondary-contrast-color);
-    border-radius: 10px;
-}
+
 
 p {
     text-wrap: balance;
