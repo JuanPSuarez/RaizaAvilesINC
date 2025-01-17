@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Title from "./components/Title";
 import ServiceNeeds from "./components/ServiceNeeds";
-// import Clients from "./components/Clients";
+import Testimony from "./components/Testimony";
 import Analytics from 'analytics'
 import googleAnalytics from '@analytics/google-analytics'
 const ga4id = import.meta.env.VITE_MEASUREMENT_ID
@@ -29,7 +29,7 @@ function App() {
       <h3>¿Tienes mas dudas?</h3>
       <button>Hablemos</button>
       <ClientLogoGrid />
-      {/* <Clients /> */}
+      <Testimony />
       <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
         <button>Contáctanos</button>
       </a>

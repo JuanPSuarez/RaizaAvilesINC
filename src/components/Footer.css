@@ -1,15 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-contrast-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
 .footericons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-self: center;
 }
 
-img {
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    
+footer img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
 }
