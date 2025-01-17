@@ -23,24 +23,35 @@ TestimonyItem.propTypes = {
 
 function Testimony() {
     const [currentTestimony, setCurrentTestimony] = useState(0);
+
+    const handleNext = () => {
+        setCurrentTestimony((prev) => (prev === testimonyData.length - 1 ? 0 : prev + 1));
+    };
+
+    const handlePrev = () => {
+        setCurrentTestimony((prev) => (prev === 0 ? testimonyData.length - 1 : prev - 1));
+    };
+
     return (
         <div>
             <h1>NUESTROS CLIENTES DICEN</h1>
             <div className="testimony-component-container">
-                <button
-                    onClick={() => setCurrentTestimony((prev) => prev + 1)}
-                    disabled={currentTestimony === testimonyData.length - 1}
-                >⏪</button>
+                <input
+                    type="button" value="⬅"
+                    className="buttonTestimony"
+                    onClick={handlePrev}
+                />
                 <TestimonyItem
-                    key={testimonyData[currentTestimony]}
+                    key={testimonyData[currentTestimony].name}
                     name={testimonyData[currentTestimony].name}
                     img={testimonyData[currentTestimony].img}
                     text={testimonyData[currentTestimony].text}
                 />
-                <button
-                    onClick={() => setCurrentTestimony((prev) => prev - 1)}
-                    disabled={currentTestimony === 0}
-                >⏩</button>
+                <input
+                    type="button" value="➡"
+                    className="buttonTestimony"
+                    onClick={handleNext}
+                />
             </div>
         </div>
     );
