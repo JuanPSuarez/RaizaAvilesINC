@@ -1,0 +1,20 @@
+.testimony-outter-container {
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    outline: 1px solid var(--text-color);
+}
+
+.testimony-inner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-img-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimony-component-container {
+    display: flex;
+    flex-direction: row;
+}
