@@ -27,10 +27,10 @@ const ServiceNeeds = () => (
                 <li>Creación de contenido para redes sociales</li>
             </div>
         </div>
-        <h3>Conoce como puedo ayudarte</h3>
+        {/* <h3>Conoce como puedo ayudarte</h3>
         <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
             <button>Contáctanos</button>
-        </a>
+        </a> */}
     </div>
 
 );
