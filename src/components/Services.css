@@ -9,9 +9,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
 }
-
+.raiza-img-0 {
+    padding-top: 5%;
+}
 .services img {
     object-fit: contain;
     margin: 0 auto;
