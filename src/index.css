@@ -28,7 +28,7 @@
 :root {
     /* Colors */
     --background-color: #E5E5E5;
-    --primary-color: #FCBB42;
+    --primary-color: rgb(252, 187, 66);
     --contrast-color: #54807F;
     --text-color: #141414;
     --secondary-text-color: #FCF2F2;
@@ -53,8 +53,8 @@
 /* Base Styles */
 
 body {
-    margin: .5%;
-    padding: .5%;
+    /* margin: .5%;
+    padding: .5%; */
     /* background-color: var(--background-color); */
     color: var(--text-color);
     font-family: var(--font-secondary);
@@ -94,6 +94,14 @@ li {
     font-size: var(--font-size-paragraph);
 }
 
+hr {
+    display: flex;
+    justify-self: center;
+    border: 1px solid var(--text-color);
+    margin: 1em 0;
+    width: 50%;
+}
+
 button {
     font-family: var(--font-secondary);
     font-size: var(--font-size-button);
@@ -107,9 +115,12 @@ button {
     max-width: 224px;
     min-width: 189px;
     margin: 1em;
-    
+    box-shadow: 0 0 5px var(--text-color);
 }
 
+img {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
 button:hover {
     background-color: #e0a82e;
     /* Slightly darker shade of primary color */
@@ -130,11 +141,23 @@ a:hover {
 
 /* Utility Classes */
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
