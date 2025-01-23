@@ -29,10 +29,10 @@ const Services = () => {
                 <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
                     <div>
                         <h1>Focus Project</h1>
-                        <p>Aumentamos el Valor percibido de tu Marca Personal y te damos Contenido para todo el mes en tan solo 3 dias</p>
+                        <p><strong>Eleva el valor percibido de tu marca personal sin perder tiempo</strong> con solo 3 dias tendras contenido para todo el mes.</p>
                     </div>
                 </a>
-
+<hr />
                 <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
                     <div>
                         <h1>Cobertura Eventos</h1>
@@ -40,14 +40,15 @@ const Services = () => {
                     </div>
 
                 </a>
+                <hr />
 
                 <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Marca+Personal">
                     <div>
                         <h1>Fotografía</h1>
-                        <p>Producciones estratégicas para tu Marca Personal</p>
+                        <p>Producciones <strong>estrategicas</strong> para tu <strong>marca personal</strong>.</p>
                     </div>
-
                 </a>
+                <hr />
             </div>
             {publicationsData.map((publication, index) => (
                 <Publication
