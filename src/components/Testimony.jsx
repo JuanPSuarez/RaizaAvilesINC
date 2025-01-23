@@ -4,7 +4,6 @@ import testimonyData from "../data/testimony.json";
 import { useState } from "react";
 
 const TestimonyItem = ({ name, img, text }) => (
-    <div className="testimony-outter-container">
         <div className="testimony-inner-container">
             <h2>{name}</h2>
             <div className="testimony-img-container">
@@ -12,7 +11,6 @@ const TestimonyItem = ({ name, img, text }) => (
                 <p>{text}</p>
             </div>
         </div>
-    </div>
 );
 
 TestimonyItem.propTypes = {
@@ -44,7 +42,7 @@ function Testimony() {
                 <TestimonyItem
                     key={testimonyData[currentTestimony].name}
                     name={testimonyData[currentTestimony].name}
-                    img={testimonyData[currentTestimony].img}
+                    img={testimonyData[currentTestimony].image}
                     text={testimonyData[currentTestimony].text}
                 />
                 <input
