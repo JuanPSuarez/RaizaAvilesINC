@@ -22,14 +22,16 @@ function App() {
   return (
     <div className="container">
       <Title />
-      <button>Reserva tu reunión gratis</button>
+      <a href="https://calendly.com/raizaavilesinc">
+        <button>Reserva tu reunión gratis</button>
+        </a>
       <Services />
-      <button>Agenda tu reunion</button>
+      <a href="https://calendly.com/raizaavilesinc">
+        <button>Reserva tu reunión</button>
+        </a>
       <ServiceNeeds />
-      <h3>¿Tienes mas dudas?</h3>
-      <button>Hablemos</button>
-      <ClientLogoGrid />
       <Testimony />
+      <ClientLogoGrid />
       <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
         <button>Contáctanos</button>
       </a>
