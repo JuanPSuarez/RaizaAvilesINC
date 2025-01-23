@@ -50,6 +50,7 @@ const Services = () => {
                 </a>
                 <hr />
             </div>
+            <img className="raiza-img-0" src="/assets/images/img_0.jpg" alt="" />
             {publicationsData.map((publication, index) => (
                 <Publication
                     key={index}
