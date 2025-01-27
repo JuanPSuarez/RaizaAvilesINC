@@ -48,7 +48,6 @@ const Services = () => {
                         <p>Producciones <strong>estrategicas</strong> para tu <strong>marca personal</strong>.</p>
                     </div>
                 </a>
-                <hr />
             </div>
             <img className="raiza-img-0" src="/assets/images/img_0.jpg" alt="" />
             {publicationsData.map((publication, index) => (

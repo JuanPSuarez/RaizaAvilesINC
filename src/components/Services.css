@@ -1,14 +1,10 @@
+.services {
+    width: 100%;
+}
 .principal-services {
     background-color: var(--secondary-contrast-color);
     box-shadow: 0 0 5px var(--text-color);
     border-radius: 10px;
-    width: 100%;
-}
-.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .raiza-img-0 {
     padding-top: 5%;
