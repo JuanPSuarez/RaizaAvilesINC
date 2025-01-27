@@ -1,3 +1,4 @@
+/* Belleza Font */
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
 
@@ -14,12 +15,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Belleza';
-    src: url('/assets/fonts/Belleza-Regular.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /* Define CSS Variables */
 
@@ -49,12 +45,14 @@
     object-fit:contain;
 }
 
-;
+* {
+    box-sizing: border-box;
+}
 /* Base Styles */
 
 body {
-    /* margin: .5%;
-    padding: .5%; */
+    margin: 0;
+    padding: 0;
     /* background-color: var(--background-color); */
     color: var(--text-color);
     font-family: var(--font-secondary);
