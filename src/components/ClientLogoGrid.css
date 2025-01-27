@@ -3,44 +3,44 @@
   box-shadow: 0 0 5px var(--text-color);
   width: 100%;
   border-radius: 10px;
+  padding: 10px;
 }
 
 
 .gridContainer {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  grid-template-columns: repeat(1, 1fr);
-
 }
 
+
 @media (min-width: 300px) {
-  .gridContainer {
-    grid-template-columns: repeat(2, 1fr);
+  .logoContainer {
+    flex: 1 1 calc(50% - 16px);
   }
 }
 
 @media (min-width: 900px) {
-  .gridContainer {
-    grid-template-columns: repeat(3, 1fr);
+  .logoContainer {
+    flex: 1 1 calc(33.33% - 16px);
+    aspect-ratio: 16/9;
+    max-height: 200px;
   }
 }
-
 .logoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 1%;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 100px;
-}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: calc(50% - 16px);
 
 .logo {
   max-width: 100%;
   max-height: 100px;
   object-fit: contain;
+}
 }
