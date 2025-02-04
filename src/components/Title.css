@@ -15,6 +15,14 @@
     background-position: top;
     background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+    .background {
+        background-image: url('/assets/images/bg_2.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
 
 .title h1,
 .title h3,
@@ -53,4 +61,8 @@
     height: 40%;
     margin: 05%;
     align-self: flex-end;
+}
+
+.title button {
+    margin: 4rem;
 }

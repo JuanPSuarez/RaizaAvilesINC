@@ -20,22 +20,21 @@ function App() {
   })
   analytics.page()
   return (
-    <div className="container">
+    <div className="App">
       <Title />
-      <a href="https://calendly.com/raizaavilesinc">
-        <button>Reserva tu reunión gratis</button>
+      <div className="container">
+        <Services />
+        <a href="https://calendly.com/raizaavilesinc">
+          <button>Reserva tu reunión</button>
         </a>
-      <Services />
-      <a href="https://calendly.com/raizaavilesinc">
-        <button>Reserva tu reunión</button>
+        <ServiceNeeds />
+        <Testimony />
+        <ClientLogoGrid />
+        <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
+          <button>Contáctanos</button>
         </a>
-      <ServiceNeeds />
-      <Testimony />
-      <ClientLogoGrid />
-      <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+tus+servicios">
-        <button>Contáctanos</button>
-      </a>
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
