@@ -26,28 +26,32 @@ const Services = () => {
     return (
         <div className="services">
             <div className="principal-services">
-                <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
-                    <div>
-                        <h1>Focus Project</h1>
-                        <p><strong>Eleva el valor percibido de tu marca personal sin perder tiempo</strong> con solo 3 dias tendras contenido para todo el mes.</p>
-                    </div>
-                </a>
-<hr />
-                <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
-                    <div>
-                        <h1>Cobertura Eventos</h1>
-                        <p>Para líderes y mentores que desean capturar el impacto de sus eventos. Podrás otorgar valor a tu comunidad y promocionar tus eventos.</p>
-                    </div>
-
-                </a>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
+                        <div>
+                            <h1>Focus Project</h1>
+                            <p><strong>Eleva el valor percibido de tu marca personal sin perder tiempo</strong> con solo 3 dias tendras contenido para todo el mes.</p>
+                        </div>
+                    </a>
+                </div>
                 <hr />
-
-                <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Marca+Personal">
-                    <div>
-                        <h1>Fotografía</h1>
-                        <p>Producciones <strong>estrategicas</strong> para tu <strong>marca personal</strong>.</p>
-                    </div>
-                </a>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
+                        <div>
+                            <h1>Cobertura Eventos</h1>
+                            <p>Para líderes y mentores que desean capturar el impacto de sus eventos. Podrás otorgar valor a tu comunidad y promocionar tus eventos.</p>
+                        </div>
+                    </a>
+                </div>
+                <hr />
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Marca+Personal">
+                        <div>
+                            <h1>Fotografía</h1>
+                            <p>Producciones <strong>estrategicas</strong> para tu <strong>marca personal</strong>.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <img className="raiza-img-0" src="/assets/images/img_0.jpg" alt="" />
             {publicationsData.map((publication, index) => (
@@ -60,7 +64,11 @@ const Services = () => {
                     buttonText={publication.button}
                 />
             ))}
+            <a href="https://calendly.com/raizaavilesinc">
+                <button>Reserva tu reunión</button>
+            </a>
         </div>
+
     );
 }
 export default Services;
