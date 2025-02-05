@@ -1,12 +1,16 @@
 import "./App.css";
-import ClientLogoGrid from "./components/ClientLogoGrid";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
-import Title from "./components/Title";
-import ServiceNeeds from "./components/ServiceNeeds";
-import Testimony from "./components/Testimony";
+
 import Analytics from 'analytics'
 import googleAnalytics from '@analytics/google-analytics'
+
+import Title from "./components/Title";
+import Services from "./components/Services";
+import ServiceNeeds from "./components/ServiceNeeds";
+import Testimony from "./components/Testimony";
+import ClientLogoGrid from "./components/ClientLogoGrid";
+import Bio from "./components/Bio";
+import Footer from "./components/Footer";
+
 const ga4id = import.meta.env.VITE_MEASUREMENT_ID
 function App() {
 
@@ -22,13 +26,14 @@ function App() {
   return (
     <div className="App">
       <Title />
+      <Services />
       <div className="container">
-        <Services />
         <ServiceNeeds />
         <Testimony />
         <ClientLogoGrid />
-        <Footer />
+        <Bio />
       </div>
+      <Footer />
     </div>
   );
 }
