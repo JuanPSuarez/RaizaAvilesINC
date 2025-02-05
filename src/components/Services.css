@@ -1,7 +1,3 @@
-.services {
-    width: 100%;
-}
-
 .principal-services {
     background-color: var(--secondary-contrast-color);
     box-shadow: 0 0 5px var(--text-color);
@@ -11,18 +7,19 @@
     .principal-services {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center; 
         border-radius: 10px;
     }
     .principal-services hr {
-        rotate: 90deg;
-        width: 250px;
-        height: 1px;
+        width: 1px;
+        height: 50px;
+        align-self: center;
     }
-}
-
-.raiza-img-0 {
-    padding-top: 5%;
+    .principal-services > div {
+        flex: 1; 
+        text-align: center;
+    }
 }
 
 .services img {
@@ -58,4 +55,17 @@ p {
 
 .principal-services p {
     display: block;
+}
+
+.hero-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: inherit;
+}
+
+.bg-image-hero {
+    position: relative;
+    top: 400px;
+    right: 150px;
 }
