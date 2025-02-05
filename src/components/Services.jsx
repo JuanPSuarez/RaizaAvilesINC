@@ -53,7 +53,10 @@ const Services = () => {
                     </a>
                 </div>
             </div>
-            <img className="raiza-img-0" src="/assets/images/img_0.jpg" alt="" />
+            <div className="hero-img-container">
+                <img className="bg-image-hero" src="/assets/images/bg.svg" alt="" />
+                <img className="img-hero" src="/assets/images/img_0.jpg" alt="" />
+            </div>
             {publicationsData.map((publication, index) => (
                 <Publication
                     key={index}

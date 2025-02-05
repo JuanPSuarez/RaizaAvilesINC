@@ -36,7 +36,10 @@
         justify-content: center;
         min-height: 55vh;
     }
-
+    .testimony-component-container p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
     .testimony-img-container {
         display: flex;
         flex-direction: row;
@@ -64,4 +67,8 @@
     box-shadow: 0 0 5px var(--text-color);
     border: none;
     border-radius: 5px;
+}
+
+.testimony-component-container p {
+    font-style: italic;
 }
