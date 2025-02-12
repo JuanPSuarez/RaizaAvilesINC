@@ -7,7 +7,7 @@ const ClientLogoGrid = () => {
   useEffect(() => {
     const loadLogos = () => {
       const logoList = [];
-      const totalLogos = 11;
+      const totalLogos = 12;
 
       for (let i = 1; i <= totalLogos; i++) {
         logoList.push(`/assets/logos/Logo_${i}.png`); // Update the naming pattern if necessary
