@@ -24,7 +24,7 @@
 :root {
     /* Colors */
     --background-color: #E5E5E5;
-    --primary-color: rgb(252, 187, 66);
+    --primary-color: #fcbb42;
     --contrast-color: #54807F;
     --text-color: #141414;
     --secondary-text-color: #FCF2F2;
@@ -34,10 +34,10 @@
     --font-secondary: 'DM Sans', sans-serif;
     --font-tertiary: 'Belleza', sans-serif;
     /* Font Sizes */
-    --font-size-h1: 32px;
-    --font-size-h2: 28px;
+    --font-size-h1: 38px;
+    --font-size-h2: 32px;
     --font-size-h3: 18px;
-    --font-size-paragraph: 14px;
+    --font-size-paragraph: 20px;
     --font-size-button: 14px;
     background-image: url('/assets/images/bg_0.jpg');
     background-position: center;
@@ -139,9 +139,14 @@ button:hover {
 /* Links */
 
 a {
-    color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     text-decoration: none;
 }
+
 
 a:hover {
     text-decoration: underline;

@@ -1,6 +1,7 @@
 import "./Services.css";
 import PropTypes from "prop-types";
 import publicationsData from "../data/services.json";
+import HeroImage from "./HeroImage";
 
 // Publication component
 const Publication = ({ title, subtitle, imageSrc, text, buttonText }) => (
@@ -30,7 +31,9 @@ const Services = () => {
                     <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Focus+Proyect">
                         <div>
                             <h1>Focus Project</h1>
-                            <p><strong>Eleva el valor percibido de tu marca personal sin perder tiempo</strong> con solo 3 dias tendras contenido para todo el mes.</p>
+                            <p>
+                                Eleva el <strong>valor percibido</strong> de tu <strong>marca personal</strong> sin perder tiempo. En solo 3 días, tendrás contenido para todo el mes.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -39,7 +42,7 @@ const Services = () => {
                     <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
                         <div>
                             <h1>Cobertura Eventos</h1>
-                            <p>Para líderes y mentores que desean capturar el impacto de sus eventos. Podrás otorgar valor a tu comunidad y promocionar tus eventos.</p>
+                            <p>Para líderes y mentores que desean <strong>capturar el impacto</strong> de sus eventos. Aporta <strong>valor</strong> a tu comunidad y <strong>promociona</strong> tus próximos encuentros.</p>
                         </div>
                     </a>
                 </div>
@@ -48,15 +51,12 @@ const Services = () => {
                     <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Marca+Personal">
                         <div>
                             <h1>Fotografía</h1>
-                            <p>Producciones <strong>estrategicas</strong> para tu <strong>marca personal</strong>.</p>
+                            <p>Producción <strong>estrategica</strong> de <strong>fotos</strong> para marca personal.</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div className="hero-img-container">
-                <img className="bg-image-hero" src="/assets/images/bg.svg" alt="" />
-                <img className="img-hero" src="/assets/images/img_0.jpg" alt="" />
-            </div>
+            <HeroImage />
             {publicationsData.map((publication, index) => (
                 <Publication
                     key={index}

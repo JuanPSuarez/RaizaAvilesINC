@@ -1,6 +1,7 @@
 .principal-services {
     background-color: var(--secondary-contrast-color);
     box-shadow: 0 0 5px var(--text-color);
+    padding: 5% 0%;
 }
 
 @media (min-width: 768px) {
@@ -53,17 +54,4 @@ p {
 
 .principal-services p {
     display: block;
-}
-
-.hero-img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: inherit;
-}
-
-.bg-image-hero {
-    position: relative;
-    top: 400px;
-    right: 150px;
 }

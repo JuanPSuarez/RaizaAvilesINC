@@ -1,7 +1,17 @@
 .bio-content p {
-    font-style: italic;
-    color: #555;
+    display: block;
+    /* font-style: italic; */
+
+}
+.bio-content p {
     padding-left: 10px;
     margin: 20px 0;
 }
 
+.bio h1 {
+    display: unset;
+    display: block;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: normal;
+}

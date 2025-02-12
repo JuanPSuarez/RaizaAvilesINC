@@ -30,9 +30,11 @@
     color: var(--secondary-text-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     margin: 0;
+    text-align: left;
 }
 .title h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: normal;
 }
 
 .title p {
@@ -42,7 +44,7 @@
     display: flex;
     align-self: center;
     flex-grow: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -52,7 +54,7 @@
     max-width: 80ch;
     overflow-wrap: break-word;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .title img {  
@@ -65,4 +67,19 @@
 
 .title button {
     margin: 4rem;
+}
+
+@media (min-width: 768px) {
+    .heroTitle h1,
+    .heroTitle p
+    {
+        padding: 0% 5%;
+    }
+}
+@media (max-width: 768px) {
+    .heroTitle h1,
+    .heroTitle p
+    {
+        padding: 0% 5%;
+    }
 }
