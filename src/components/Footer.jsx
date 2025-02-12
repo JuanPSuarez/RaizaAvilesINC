@@ -15,10 +15,10 @@ const Footer = () => (
                 <a href="https://api.whatsapp.com/send?phone=%2B543517872051">
                     <img src="/assets/icons/icon_3.png" />
                 </a>
-                <a href="youtube.com/raizaavilesinc">
+                <a href="https://www.youtube.com/@raizaavilesinc">
                     <img src="/assets/icons/icon_4.png" />
                 </a>
-                <a href="tiktok.com/@raizaavilesinc">
+                <a href="https://www.tiktok.com/@raiza_aviles?_t=ZM-8tqAagKGrRe&_r=1">
                     <img src="/assets/icons/icon_5.png" />
                 </a>
             </div>
