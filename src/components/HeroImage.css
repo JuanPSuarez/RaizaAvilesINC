@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    position: relative;
+    margin: 5vh 0;
 }
 
 .hero-img-container {
