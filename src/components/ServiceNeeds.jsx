@@ -20,8 +20,8 @@ const ServiceNeeds = () => (
             <li>Delegar para escalar</li>
             <li>Aumentar tu credibidilidad</li>
             <li>Elevar el valor percibido de tu marca.</li>
-            <h2>ENTONCES ESTE SERVICIO ES PARA TI</h2>
         </ul>
+        <h2>ENTONCES ESTE SERVICIO ES PARA TI</h2>
         <a href="https://calendly.com/raizaavilesinc">
             <button>Agendar llamada</button>
         </a>
