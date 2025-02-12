@@ -22,7 +22,7 @@ const Footer = () => (
                     <img src="/assets/icons/icon_5.png" />
                 </a>
             </div>
-            <p>© 2024 Raiza Aviles Inc.</p>
+            <p>© {new Date().getFullYear()} Raiza Aviles Inc.</p>
             <p>Todos los derechos reservados</p>
         </footer>
     </div>
