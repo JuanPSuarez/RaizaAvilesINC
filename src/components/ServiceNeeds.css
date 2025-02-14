@@ -1,0 +1,13 @@
+.serviceNeeds {
+    background-color: var(--secondary-contrast-color);
+    box-shadow: 0 0 5px var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    line-height: 1.6;
+    padding: 10px;
+    z-index: 0;
+}

@@ -1,3 +1,7 @@
+/* Belleza Font */
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url('/assets/fonts/BebasNeue-Regular.ttf') format('opentype');
@@ -7,7 +11,7 @@
 
 @font-face {
     font-family: 'DM Sans';
-    src: url(/assets/fonts/DMSans-Regular.ttf) format('opentype');
+    src: url('/assets/fonts/DMSans-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,36 +19,56 @@
 
 /* Define CSS Variables */
 
+
+
 :root {
     /* Colors */
     --background-color: #E5E5E5;
-    --primary-color: #FCBB42;
+    --primary-color: #fcbb42;
     --contrast-color: #54807F;
     --text-color: #141414;
     --secondary-text-color: #FCF2F2;
+    --secondary-contrast-color: #CDCDCD;
     /* Fonts */
-    --font-primary: 'Bebas Neue', sans-serif;
+    --font-primary: 'Belleza', sans-serif;
     --font-secondary: 'DM Sans', sans-serif;
+    --font-tertiary: 'Belleza', sans-serif;
     /* Font Sizes */
-    --font-size-h1: 32px;
-    --font-size-h2: 28px;
-    --font-size-h3: 18px;
-    --font-size-paragraph: 14px;
-    --font-size-button: 14px;
+    --font-size-h1: 2.4rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-paragraph: 1.25rem;
+    --font-size-button: 0.875rem;
+    background-image: url('/assets/images/bg_0.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 /* Base Styles */
 
 body {
-    margin: .5%;
-    padding: .5%;
-    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--background-color); */
     color: var(--text-color);
     font-family: var(--font-secondary);
     font-size: var(--font-size-paragraph);
-    line-height: 1.6;
 }
+
+img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    max-width: 650px;
+    max-height: 650px;
+}
+
 
 
 /* Explicitly applying styles to h1, p, and button */
@@ -70,6 +94,22 @@ h3 {
 p {
     font-family: var(--font-secondary);
     font-size: var(--font-size-paragraph);
+    padding: 0 1em;
+}
+
+ul {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-paragraph);
+    line-height: normal;
+    padding: 0 1em;
+}
+
+hr {
+    display: flex;
+    justify-self: center;
+    border: 1px solid var(--text-color);
+    margin: 1em 0;
+    width: 50%;
 }
 
 button {
@@ -84,34 +124,80 @@ button {
     transition: background-color 0.3s ease;
     max-width: 224px;
     min-width: 189px;
+    margin: 1em;
+    box-shadow: 0 0 5px var(--text-color);
 }
 
+img {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
 button:hover {
     background-color: #e0a82e;
     /* Slightly darker shade of primary color */
 }
 
-
+footer {
+    margin-top: 5vh;
+}
 /* Links */
 
 a {
-    color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     text-decoration: none;
 }
+
 
 a:hover {
     text-decoration: underline;
 }
 
 
-/* Utility Classes (Optional) */
+/* Utility Classes */
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Desktop */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+    }
+    li {
+        font-size: var(--font-size-paragraph);
+        list-style-position: inside;
+        padding: 0 1em;
+    }
+}
+/* Mobile */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    p {
+        font-size: 1rem;
+    }
+    ul {
+        font-size: 1rem;
+        text-align: justify;
+    }
 }
