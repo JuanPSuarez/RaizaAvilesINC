@@ -11,27 +11,3 @@
     padding: 10px;
     z-index: 0;
 }
-
-
-.serviceNeeds ul {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.serviceNeeds ul::after {
-    width: 100%;
-    display: inline-block;
-    content: ".";
-    visibility: hidden;
-    height: 0;
-    clear: both;
-    text-justify: inter-word;
-
-}
-
-.serviceNeeds li {
-    font-size: var(--font-size-h3);
-    text-justify: inter-word;
-
-
-}
