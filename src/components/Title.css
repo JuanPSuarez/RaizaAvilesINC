@@ -8,13 +8,14 @@
 .background {
     display: flex;
     flex-direction: column;
-    min-height:inherit;
+    min-height: inherit;
     min-width: inherit;
     background-image: url('/assets/images/bg_1.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 }
+
 @media (min-width: 768px) {
     .background {
         background-image: url('/assets/images/bg_2.jpg');
@@ -30,15 +31,16 @@
     color: var(--secondary-text-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     margin: 0;
+    text-align: left;
+    justify-content: left;
 }
+
 .title h1 {
     font-size: 3.5rem;
     line-height: normal;
 }
 
-.title p {
-    font-size: 1.5rem;
-}
+
 .title h3 {
     display: flex;
     align-self: center;
@@ -56,12 +58,27 @@
     justify-content: flex-end;
 }
 
-.title img {  
+@media screen and (max-width: 768px) {
+    .heroTitle {
+        margin-bottom: -7vh;
+    }
+}
+
+
+.title img {
     display: flex;
     width: 40%;
     height: 40%;
-    margin: 05%;
+    margin: 0;
+    margin-right: 5vh;
     align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+    .title img {
+        align-self: flex-end;
+        transform: scale(0.5);
+    }
 }
 
 .title button {
@@ -69,16 +86,17 @@
 }
 
 @media (min-width: 768px) {
+
     .heroTitle h1,
-    .heroTitle p
-    {
+    .heroTitle p {
         padding: 0% 5%;
     }
 }
+
 @media (max-width: 768px) {
+
     .heroTitle h1,
-    .heroTitle p
-    {
+    .heroTitle p {
         padding: 0% 5%;
     }
 }

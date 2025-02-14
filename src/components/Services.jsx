@@ -42,7 +42,7 @@ const Services = () => {
                     <a href="https://api.whatsapp.com/send?phone=5493517872051&text=¡Hola!+quiero+saber+mas+sobre+Cobertura+de+Eventos">
                         <div>
                             <h1>Cobertura Eventos</h1>
-                            <p>Para líderes y mentores que desean <strong>capturar el impacto</strong> de sus eventos. Aporta <strong>valor</strong> a tu comunidad y <strong>promociona</strong> tus próximos encuentros.</p>
+                            <p>Para líderes y mentores que desean <strong>capturar el impacto</strong> de sus eventos. Aportar <strong>valor</strong> a su comunidad y <strong>promocionar</strong> sus próximos encuentros.</p>
                         </div>
                     </a>
                 </div>
